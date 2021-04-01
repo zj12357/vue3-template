@@ -27,6 +27,15 @@ const routes: Array<RouteRecordRaw> = [
       },
       component: () => import('./TsxPage.tsx'),
     },
+    {
+      path: "/player",
+      name: "player",
+      meta: {
+        title: "直播",
+        keepAlive: true
+      },
+      component: () => import('./Player.tsx'),
+    },
   ];
   const router = createRouter({
     history: createWebHistory(),

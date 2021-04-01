@@ -11,6 +11,7 @@
     <button @click="changeAge">改变年龄</button>
     <button @click="router.push('/Login')">去登录页</button>
     <button @click="router.push('/tsxPage')">去TSX页面</button>
+    <button @click="router.push('/player')">去直播页面</button>
   </div>
 </template>
 <script lang="ts">
