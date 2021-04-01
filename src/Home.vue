@@ -26,15 +26,15 @@ type repositoriesType = {
 import { defineComponent, onMounted, reactive, computed } from "vue";
 import { useStore } from "vuex";
 import { get } from "./server";
-import { useRouter } from 'vue-router'
+import { useRouter } from "vue-router";
 export default defineComponent({
   name: "Home",
-  setup: (props,context) => {
-    console.log(context,'context参数');
-    
+  setup: (props, context) => {
+    console.log(context, "context参数");
+
     let repositories = reactive({ list: [] as repositoriesType[] });
     const store = useStore();
-    const router =useRouter();
+    const router = useRouter();
     const number = computed(() => store.state.num);
     const age = computed(() => store.state.listData.age);
     console.log(store.state, "store");
@@ -42,7 +42,7 @@ export default defineComponent({
       store.commit("addNum");
     };
     const changeAge = () => {
-      store.dispatch("setData", {age:50});
+      store.dispatch("setData", { age: 50 });
     };
     onMounted(async () => {
       const res: any = await get("api/v1/sports/index");
@@ -56,7 +56,7 @@ export default defineComponent({
       changeNum,
       age,
       changeAge,
-      router
+      router,
     };
   },
 });
@@ -69,7 +69,15 @@ export default defineComponent({
   align-items: center;
   width: 100%;
   .home-data {
-    width: 600px;
+    width: 100%;
+    height: auto;
+    white-space: pre-wrap;
+    p {
+     
+      word-break: break-all;
+      white-space: normal;
+      font-size: 14px;
+    }
   }
 }
 </style>

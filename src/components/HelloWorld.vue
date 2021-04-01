@@ -87,10 +87,14 @@ export default defineComponent({
 </script>
 
 <style scoped lang="scss">
+#msg{
+  width: 100%;
+}
 .msg {
   display: flex;
   justify-content: center;
   flex-direction: column;
+   width: 100%;
 }
 .home {
   width: 200px;
