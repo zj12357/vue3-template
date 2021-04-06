@@ -3422,6 +3422,11 @@ launch-editor@^2.2.1:
     chalk "^2.3.0"
     shell-quote "^1.6.1"
 
+lazysizes@^5.3.2:
+  version "5.3.2"
+  resolved "http://137.116.166.238:4873/lazysizes/-/lazysizes-5.3.2.tgz#27f974c26f5fcc33e7db765c0f4930488c8a2984"
+  integrity sha512-22UzWP+Vedi/sMeOr8O7FWimRVtiNJV2HCa+V8+peZOw6QbswN9k58VUhd7i6iK5bw5QkYrF01LJbeJe0PV8jg==
+
 less@^4.1.1:
   version "4.1.1"
   resolved "http://137.116.166.238:4873/less/-/less-4.1.1.tgz#15bf253a9939791dc690888c3ff424f3e6c7edba"

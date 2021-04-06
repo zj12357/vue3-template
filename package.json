@@ -12,6 +12,7 @@
     "@vue/cli-plugin-babel": "^4.5.12",
     "axios": "^0.21.1",
     "history": "^5.0.0",
+    "lazysizes": "^5.3.2",
     "less": "^4.1.1",
     "postcss-px-to-viewport": "^1.1.1",
     "qs": "^6.10.0",

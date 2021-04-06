@@ -2,6 +2,7 @@ import { defineComponent, reactive, computed, toRefs, onMounted } from "vue";
 import "xgplayer";
 import HlsJsPlayer from "xgplayer-hls.js";
 import FlvJsPlayer from "xgplayer-flv.js";
+import './Player.less'
 
 export default defineComponent({
   setup() {
@@ -105,29 +106,119 @@ export default defineComponent({
         { name: "超清", url: "url2" },
       ]);
 
-     console.log( player);
-     
-        // player.danmu.sendComment({
-        //   //发送弹幕
-        //   duration: 15000,
-        //   id: "8",
-        //   start: 3000,
-        //   txt: "666666666666",
-        //   style: {
-        //     color: "#ff9500",
-        //     fontSize: "20px",
-        //     border: "solid 1px #ff9500",
-        //     borderRadius: "50px",
-        //     padding: "5px 11px",
-        //     backgroundColor: "rgba(255, 255, 255, 0.1)",
-        //   },
-        // });
+      console.log(player);
+
+      // player.danmu.sendComment({
+      //   //发送弹幕
+      //   duration: 15000,
+      //   id: "8",
+      //   start: 3000,
+      //   txt: "666666666666",
+      //   style: {
+      //     color: "#ff9500",
+      //     fontSize: "20px",
+      //     border: "solid 1px #ff9500",
+      //     borderRadius: "50px",
+      //     padding: "5px 11px",
+      //     backgroundColor: "rgba(255, 255, 255, 0.1)",
+      //   },
+      // });
     });
     return () => (
       <div>
         <div id="mse"></div>
         <input type="text" v-model={xg.danmuValue} />
         <button onClick={() => addDanmu(xg.danmuValue)}>添加弹幕</button>
+        <img
+          src="../src/assets/image/anna_no.png"
+          data-src="//aidj.zbitcloud.com/aigaming/PC/ai-mybackpack/mycherk/zhudi.png"
+          alt=""
+          class="lazyload"
+        />
+        <img
+          src="../src/assets/image/anna_no.png"
+          data-src="//aidj.zbitcloud.com/aigaming/PC/ai-mybackpack/mycherk/zhudi.png"
+          alt=""
+          class="lazyload"
+        />
+        <img
+          src="../src/assets/image/anna_no.png"
+          data-src="//aidj.zbitcloud.com/aigaming/PC/ai-mybackpack/mycherk/zhudi.png"
+          alt=""
+          class="lazyload"
+        />
+        <img
+          src="../src/assets/image/anna_no.png"
+          data-src="//aidj.zbitcloud.com/aigaming/PC/ai-mybackpack/mycherk/zhudi.png"
+          alt=""
+          class="lazyload"
+        />
+        <img
+          src="../src/assets/image/anna_no.png"
+          data-src="//aidj.zbitcloud.com/aigaming/PC/ai-mybackpack/mycherk/zhudi.png"
+          alt=""
+          class="lazyload"
+        />
+        <img
+          src="../src/assets/image/anna_no.png"
+          data-src="//aidj.zbitcloud.com/aigaming/PC/ai-mybackpack/mycherk/zhudi.png"
+          alt=""
+          class="lazyload"
+        />
+        <img
+          src="../src/assets/image/anna_no.png"
+          data-src="//aidj.zbitcloud.com/aigaming/PC/ai-mybackpack/mycherk/zhudi.png"
+          alt=""
+          class="lazyload"
+        />
+        <img
+          src="../src/assets/image/anna_no.png"
+          data-src="//aidj.zbitcloud.com/aigaming/PC/ai-mybackpack/mycherk/zhudi.png"
+          alt=""
+          class="lazyload"
+        />
+        <img
+          src="../src/assets/image/anna_no.png"
+          data-src="//aidj.zbitcloud.com/aigaming/PC/ai-mybackpack/mycherk/zhudi.png"
+          alt=""
+          class="lazyload"
+        />
+        <img
+          src="../src/assets/image/anna_no.png"
+          data-src="//aidj.zbitcloud.com/aigaming/PC/ai-mybackpack/mycherk/zhudi.png"
+          alt=""
+          class="lazyload"
+        />
+        <img
+          src="../src/assets/image/anna_no.png"
+          data-src="//aidj.zbitcloud.com/aigaming/PC/ai-mybackpack/mycherk/zhudi.png"
+          alt=""
+          class="lazyload"
+        />
+        <img
+          src="../src/assets/image/anna_no.png"
+          data-src="//aidj.zbitcloud.com/aigaming/PC/ai-mybackpack/mycherk/zhudi.png"
+          alt=""
+          class="lazyload"
+        />
+        <img
+          src="../src/assets/image/anna_no.png"
+          data-src="//aidj.zbitcloud.com/aigaming/PC/ai-mybackpack/mycherk/zhudi.png"
+          alt=""
+          class="lazyload"
+        />
+        <img
+          src="../src/assets/image/anna_no.png"
+          data-src="//aidj.zbitcloud.com/aigaming/PC/ai-mybackpack/mycherk/zhudi.png"
+          alt=""
+          class="lazyload"
+        />
+        <img
+          src="../src/assets/image/anna_no.png"
+          data-src="//aidj.zbitcloud.com/aigaming/PC/ai-mybackpack/mycherk/zhudi.png"
+          alt=""
+          class="lazyload"
+        />
       </div>
     );
   },

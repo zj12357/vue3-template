@@ -5,6 +5,8 @@ import store from "./store";
 import i18nPlugin from './plugins'
 import '../src/assets/css/normalize.css'
 import "../src/assets/css/base.css"
+import 'lazysizes';
+
 const app = createApp(App);
 
 const i18nStrings = {
