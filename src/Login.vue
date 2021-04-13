@@ -30,7 +30,7 @@
 </template>
 
 <script lang="ts">
-import { log } from "node:console";
+
 import {
   defineComponent,
   onRenderTriggered,
