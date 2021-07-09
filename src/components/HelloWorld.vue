@@ -62,13 +62,13 @@ export default defineComponent({
     const userLocation = inject("location") as string;
     const userGeolocation = inject("geolocation") as provideType;
     const greetings = inject("i18n") as greetingsType; // vue插件
-    const { ctx } = getCurrentInstance() as any;
+    const { proxy } = getCurrentInstance() as any;
     console.log(userLocation, "location");
     console.log(userGeolocation, "geolocation");
     onMounted(() => {
       console.log(props, "onMounted", greetings, "greetings");
 
-      console.log(ctx.$translate);
+      console.log(proxy.$translate);
     });
 
     watch(count, (newval) => {
